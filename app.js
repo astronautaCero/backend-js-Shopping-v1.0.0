@@ -9,16 +9,22 @@ const http = require('http');
 const app = express();
 const server = http.createServer(app);
 
-// Add this line
+// Add this line express
 const expressConfig = require('./config/express');
+
+// Add this line routes
+const routeConfig = require('./routes');
 
 const config = {
   port: 8080,
   ip: '127.0.0.1',
 };
 
-// Add this line
+// Add this instance express
 expressConfig(app);
+
+// Add this instance app routes
+routeConfig(app);
 
 // Start server
 function startServer() {
