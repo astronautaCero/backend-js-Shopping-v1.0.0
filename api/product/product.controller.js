@@ -2,7 +2,7 @@
  * Using Rails-like standard naming convention for endpoints.
  * GET     /api/products           ->  index
  * GET     /api/products/:id       ->  show
- * POSG    /api/products           ->  create
+ * POST    /api/products           ->  create
  */
 
 const Product = require('./product.model');
